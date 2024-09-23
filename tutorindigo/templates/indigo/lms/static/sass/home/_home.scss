@@ -10,6 +10,9 @@ section.home {
 .home>header .outer-wrapper {
     max-width: 100%;
 }
+.global-header {
+    background-color: #04163d; /* Sets the entire global header background */
+}
 .global-header .nav-links .secondary {
     .btn-holder {
         letter-spacing: -.32em;
