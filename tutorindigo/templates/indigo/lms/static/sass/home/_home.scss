@@ -166,6 +166,27 @@ body.indigo-dark-theme {
             }
         }
     }
+    .image-container {
+        /* Use your desired image URL */
+        background-image: url('images/learning.jpg');
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        width: 100%; /* Full width or set to specific width like 600px */
+        height: 300px; /* Adjust the height as needed */
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center; /* Center the text inside */
+        position: relative; /* Allows positioning of inner elements if needed */
+    }
+    
+    .image-container .content {
+        color: #fff; /* Set text color to contrast with the background image */
+        padding: 20px; /* Optional padding for text */
+        background: rgba(0, 0, 0, 0.5); /* Optional background for better text readability */
+        border-radius: 8px; /* Optional rounded corners */
+    }
+    
     #main .home.style-logout  {
         header {
             background: none;
