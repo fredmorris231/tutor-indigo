@@ -5,21 +5,10 @@ section.home {
     padding: 0 15px;
 }
 .home>header .title {
-    background: #04163d !important;
+    background: #04163c !important;
 }
 .home>header .outer-wrapper {
     max-width: 100%;
-}
-.global-header {
-    background-color: #04163d; /* Sets the entire global header background */
-}
-.global-header img{
-    margin-left: 55px;
-    width: 180px;
-    padding: 8px;
-}
-.image-container{
-
 }
 .global-header .nav-links .secondary {
     .btn-holder {
@@ -31,25 +20,18 @@ section.home {
             padding: 12px 0;
             .btn {
                 line-height: 20px;
-                // padding: 9px 17px;
+                padding: 9px 17px;
                 font-size: 14px;
-                border: none;
+                border-radius: 6px;
                 font-weight: 500;
-                //display: block;
-            }
-            &:hover{
-                border-top: 4px solid #fff;
-                border-bottom: 4px solid #fff;
-                border-right: none;
-                border-left: none;
-                color: red;
+                display: block;
             }
         }
     }
 }
 #main .home.style-logout  {
     header {
-        background: #04163d;
+        background: #04163c;
         .outer-wrapper {
             .title {
                 width: 100%;
@@ -68,12 +50,12 @@ section.home {
                         margin: 0 0 45px;
                     }
                     h1 {
-                        color: #e5e8ef;
-                        font-size: 60px;
+                        color: #111827;
+                        font-size: 20px;
                         font-weight: 700;
                         line-height: 30px;
                         margin: 0 0 8px;
-                        margin-left: 25px;
+                        text-align: left;
                         @include media-breakpoint-up(md) {
                             font-size: 24px;
                             font-weight: 700;
@@ -102,7 +84,7 @@ section.home {
                                 position: static;
                                 margin: 0 0 0 16px;
                                 min-width: 90px;
-                                color: #0f0439;
+                                color: #fff;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 26px;
@@ -117,7 +99,7 @@ section.home {
                                     min-width: 100px;
                                 }
                                 &:hover {
-                                    background: #fff;
+                                    background: $primary;
                                     opacity: .8;
                                 }
                             }
@@ -163,46 +145,24 @@ body.indigo-dark-theme {
             color: $primary-d;
         }
     }
-    // .global-header .nav-links .secondary {
-    //     .btn-holder {
-    //         .nav-item {
-    //             // .btn {
-    //             //     &.sign-in-btn {
-    //             //         background: $primary-d;
-    //             //         color: $btn-color-d;
-    //             //         border-color: $primary-d;
-    //             //     }
-    //             //     &.register-btn {
-    //             //         // color: $text-color-d;
-    //             //         // border-color: $text-color-d;
-    //             //         // background: none;
-    //             //     }
-    //             // }
-    //         }
-    //     }
-    // }
-    .image-container {
-        /* Use your desired image URL */
-        background-image: url('../../images/learning.jpg');
-        background-size: cover; /* Cover the entire container */
-        background-position: center; /* Center the background image */
-        width: 100%; /* Full width or set to specific width like 600px */
-        height: 80%; /* Adjust the height as needed */
-        display: flex; /* Use flexbox to center content */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        text-align: center; /* Center the text inside */
-        position: relative; /* Allows positioning of inner elements if needed */
-        background-repeat: no-repeat;
+    .global-header .nav-links .secondary {
+        .btn-holder {
+            .nav-item {
+                .btn {
+                    &.sign-in-btn {
+                        background: $primary-d;
+                        color: $btn-color-d;
+                        border-color: $primary-d;
+                    }
+                    &.register-btn {
+                        color: $text-color-d;
+                        border-color: $text-color-d;
+                        background: none;
+                    }
+                }
+            }
+        }
     }
-    
-    .image-container .content {
-        color: #fff; /* Set text color to contrast with the background image */
-        padding: 20px; /* Optional padding for text */
-        background: rgba(0, 0, 0, 0.5); /* Optional background for better text readability */
-        border-radius: 8px; /* Optional rounded corners */
-    }
-    
     #main .home.style-logout  {
         header {
             background: none;
