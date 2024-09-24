@@ -13,6 +13,14 @@ section.home {
 .global-header {
     background-color: #04163d; /* Sets the entire global header background */
 }
+.global-header img{
+    margin-left: 55px;
+    width: 180px;
+    padding: 8px;
+}
+.image-container{
+
+}
 .global-header .nav-links .secondary {
     .btn-holder {
         letter-spacing: -.32em;
@@ -23,11 +31,11 @@ section.home {
             padding: 12px 0;
             .btn {
                 line-height: 20px;
-                padding: 9px 17px;
+                // padding: 9px 17px;
                 font-size: 14px;
                 border: none;
                 font-weight: 500;
-                display: block;
+                //display: block;
             }
             &:hover{
                 border-top: 4px solid #fff;
@@ -155,36 +163,37 @@ body.indigo-dark-theme {
             color: $primary-d;
         }
     }
-    .global-header .nav-links .secondary {
-        .btn-holder {
-            .nav-item {
-                .btn {
-                    &.sign-in-btn {
-                        background: $primary-d;
-                        color: $btn-color-d;
-                        border-color: $primary-d;
-                    }
-                    &.register-btn {
-                        color: $text-color-d;
-                        border-color: $text-color-d;
-                        background: none;
-                    }
-                }
-            }
-        }
-    }
+    // .global-header .nav-links .secondary {
+    //     .btn-holder {
+    //         .nav-item {
+    //             // .btn {
+    //             //     &.sign-in-btn {
+    //             //         background: $primary-d;
+    //             //         color: $btn-color-d;
+    //             //         border-color: $primary-d;
+    //             //     }
+    //             //     &.register-btn {
+    //             //         // color: $text-color-d;
+    //             //         // border-color: $text-color-d;
+    //             //         // background: none;
+    //             //     }
+    //             // }
+    //         }
+    //     }
+    // }
     .image-container {
         /* Use your desired image URL */
-        background-image: url('images/learning.jpg');
+        background-image: url('../../images/learning.jpg');
         background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the background image */
         width: 100%; /* Full width or set to specific width like 600px */
-        height: 300px; /* Adjust the height as needed */
+        height: 80%; /* Adjust the height as needed */
         display: flex; /* Use flexbox to center content */
         justify-content: center; /* Center horizontally */
         align-items: center; /* Center vertically */
         text-align: center; /* Center the text inside */
         position: relative; /* Allows positioning of inner elements if needed */
+        background-repeat: no-repeat;
     }
     
     .image-container .content {
