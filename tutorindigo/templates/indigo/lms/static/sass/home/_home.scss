@@ -5,10 +5,13 @@ section.home {
     padding: 0 15px;
 }
 .home>header .title {
-    background: #04163c !important;
+    background: none !important;
 }
 .home>header .outer-wrapper {
     max-width: 100%;
+}
+.global-header {
+    background-color: #04163d; /* Sets the entire global header background */
 }
 .global-header .nav-links .secondary {
     .btn-holder {
@@ -18,20 +21,65 @@ section.home {
             letter-spacing: normal;
             margin: 0 7px;
             padding: 12px 0;
+            position: relative; /* Allows for custom animations */
             .btn {
                 line-height: 20px;
-                padding: 9px 17px;
                 font-size: 14px;
-                border-radius: 6px;
+                border: none;
                 font-weight: 500;
-                display: block;
+                color: #fff; /* Default text color */
+                position: relative;
+                z-index: 1;
+                transition: color 0.4s ease; /* Smooth color transition */
+                /* Optional padding and display adjustments */
+                /* padding: 9px 17px; */
+                /* display: block; */
+            }
+
+            /* Unique hover effects */
+            &:hover .btn {
+                color: #ff007f; /* Unique hover text color */
+            }
+
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(to right, #ff007f, #00f1ff); /* Gradient border */
+                transition: transform 0.4s ease;
+                transform: scaleX(0); /* Hidden by default */
+                z-index: 0;
+            }
+
+            &:before {
+                top: 0; /* Top border */
+                transform-origin: left; /* Animation from left to right */
+            }
+
+            &:after {
+                bottom: 0; /* Bottom border */
+                transform-origin: right; /* Animation from right to left */
+            }
+
+            &:hover:before, &:hover:after {
+                transform: scaleX(1); /* Reveal on hover */
+            }
+
+            /* For an extra hover effect */
+            &:hover {
+                border-radius: 4px; /* Optional rounded corners on hover */
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle hover shadow */
+                background-color: rgba(255, 255, 255, 0.1); /* Background color transition */
             }
         }
     }
 }
+
 #main .home.style-logout  {
     header {
-        background: #04163c;
+        background: none;
         .outer-wrapper {
             .title {
                 width: 100%;
