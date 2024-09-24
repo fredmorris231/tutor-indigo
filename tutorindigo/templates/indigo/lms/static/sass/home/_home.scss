@@ -61,11 +61,11 @@ section.home {
                     }
                     h1 {
                         color: #e5e8ef;
-                        font-size: 20px;
+                        font-size: 60px;
                         font-weight: 700;
                         line-height: 30px;
                         margin: 0 0 8px;
-                        text-align: left;
+                        margin-left: 25px;
                         @include media-breakpoint-up(md) {
                             font-size: 24px;
                             font-weight: 700;
