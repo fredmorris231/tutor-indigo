@@ -197,20 +197,41 @@ body.indigo-dark-theme {
         .btn-holder {
             .nav-item {
                 .btn {
-                    &.sign-in-btn {
-                        background: $primary-d;
-                        color: $btn-color-d;
-                        border-color: $primary-d;
+                    &.sign-in-btn, &.register-btn {
+                        background: #007BFF; /* Blue background for both buttons */
+                        color: #fff; /* White text color */
+                        border: 2px solid #007BFF; /* Blue border */
+                        padding: 10px 20px;
+                        border-radius: 4px; /* Rounded corners */
+                        transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition on hover */
                     }
-                    &.register-btn {
-                        color: $text-color-d;
-                        border-color: $text-color-d;
-                        background: none;
-                    }
+    
+                    // &.sign-in-btn:hover {
+                    //     background: #0056b3; /* Darker blue on hover */
+                    //     border-color: #0056b3; /* Darker border on hover */
+                    //     color: #fff; /* Keep white text */
+                    // }
+    
+                    // &.register-btn {
+                    //     background: none; /* Transparent background for the register button */
+                    //     color: #007BFF; /* Blue text */
+                    //     border: 2px solid #007BFF; /* Blue border */
+                    // }
+    
+                    // &.register-btn:hover {
+                    //     background: #007BFF; /* Blue background on hover */
+                    //     color: #fff; /* White text on hover */
+                    // }
                 }
             }
         }
     }
+    .logo-image {
+        width: 150px; /* Adjust width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    
     #main .home.style-logout  {
         header {
             background: none;
