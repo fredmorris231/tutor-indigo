@@ -23,6 +23,7 @@ section.home {
             padding: 12px 0;
             position: relative; /* Allows for custom animations */
             .btn {
+                background-color: #04163d;
                 line-height: 20px;
                 font-size: 14px;
                 border: none;
@@ -38,7 +39,7 @@ section.home {
 
             /* Unique hover effects */
             &:hover .btn {
-                color: #ff007f; /* Unique hover text color */
+                color: #ff0000; /* Unique hover text color */
             }
 
             &:before, &:after {
@@ -47,7 +48,7 @@ section.home {
                 left: 0;
                 right: 0;
                 height: 4px;
-                background: linear-gradient(to right, #ff007f, #00f1ff); /* Gradient border */
+                background: linear-gradient(to right, #ff0000, #04163d); /* Gradient border */
                 transition: transform 0.4s ease;
                 transform: scaleX(0); /* Hidden by default */
                 z-index: 0;
@@ -193,42 +194,20 @@ body.indigo-dark-theme {
             color: $primary-d;
         }
     }
-    .global-header .nav-links .secondary {
-        .btn-holder {
-            .nav-item {
-                .btn {
-                    &.sign-in-btn, &.register-btn {
-                        background: #007BFF; /* Blue background for both buttons */
-                        color: #fff; /* White text color */
-                        border: 2px solid #007BFF; /* Blue border */
-                        padding: 10px 20px;
-                        border-radius: 4px; /* Rounded corners */
-                        transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition on hover */
-                    }
     
-                    // &.sign-in-btn:hover {
-                    //     background: #0056b3; /* Darker blue on hover */
-                    //     border-color: #0056b3; /* Darker border on hover */
-                    //     color: #fff; /* Keep white text */
-                    // }
-    
-                    // &.register-btn {
-                    //     background: none; /* Transparent background for the register button */
-                    //     color: #007BFF; /* Blue text */
-                    //     border: 2px solid #007BFF; /* Blue border */
-                    // }
-    
-                    // &.register-btn:hover {
-                    //     background: #007BFF; /* Blue background on hover */
-                    //     color: #fff; /* White text on hover */
-                    // }
-                }
-            }
-        }
-    }
     .logo-image {
         width: 150px; /* Adjust width */
         height: auto; /* Maintain aspect ratio */
+    }
+    .outer-wrapper {
+        background-image: url("${static.url('images/logo.png')}");
+        background-size: cover; /* Ensures the image covers the entire container */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     
