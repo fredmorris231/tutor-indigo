@@ -25,9 +25,16 @@ section.home {
                 line-height: 20px;
                 padding: 9px 17px;
                 font-size: 14px;
-                border-radius: 6px;
+                border: none;
                 font-weight: 500;
                 display: block;
+            }
+            &:hover{
+                border-top: 4px solid #fff;
+                border-bottom: 4px solid #fff;
+                border-right: none;
+                border-left: none;
+                color: red;
             }
         }
     }
