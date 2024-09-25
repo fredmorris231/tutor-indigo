@@ -5,14 +5,7 @@ section.home {
     padding: 0 15px;
 }
 .home>header .title {
-    background-image: url("${static.url('images/learning.jpg')}");
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #04163d !important;
 }
 .home>header .outer-wrapper {
     max-width: 100%;
@@ -20,12 +13,11 @@ section.home {
 .global-header {
     background-color: #04163d; /* Sets the entire global header background */
 }
-.wrapper-footer {
-    background-color: #04163d; /* Keep the dark blue background */
-    padding: 20px; /* Retain the padding */
-    color: white; /* Set text color for better contrast */
+.global-header img{
+    margin-left: 55px;
+    width: 180px;
+    padding: 8px;
 }
-
 
 .global-header .nav-links .secondary {
     .btn-holder {
@@ -35,66 +27,27 @@ section.home {
             letter-spacing: normal;
             margin: 0 7px;
             padding: 12px 0;
-            position: relative; /* Allows for custom animations */
             .btn {
-                background-color: #04163d;
                 line-height: 20px;
+                // padding: 9px 17px;
                 font-size: 14px;
                 border: none;
                 font-weight: 500;
-                color: #fff; /* Default text color */
-                position: relative;
-                z-index: 1;
-                transition: color 0.4s ease; /* Smooth color transition */
-                /* Optional padding and display adjustments */
-                /* padding: 9px 17px; */
-                /* display: block; */
+                //display: block;
             }
-
-            /* Unique hover effects */
-            &:hover .btn {
-                color: #ff0000; /* Unique hover text color */
-            }
-
-            &:before, &:after {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                height: 4px;
-                background: linear-gradient(to right, #ff0000, #04163d); /* Gradient border */
-                transition: transform 0.4s ease;
-                transform: scaleX(0); /* Hidden by default */
-                z-index: 0;
-            }
-
-            &:before {
-                top: 0; /* Top border */
-                transform-origin: left; /* Animation from left to right */
-            }
-
-            &:after {
-                bottom: 0; /* Bottom border */
-                transform-origin: right; /* Animation from right to left */
-            }
-
-            &:hover:before, &:hover:after {
-                transform: scaleX(1); /* Reveal on hover */
-            }
-
-            /* For an extra hover effect */
-            &:hover {
-                border-radius: 4px; /* Optional rounded corners on hover */
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle hover shadow */
-                background-color: rgba(255, 255, 255, 0.1); /* Background color transition */
+            &:hover{
+                border-top: 4px solid #fff;
+                border-bottom: 4px solid #fff;
+                border-right: none;
+                border-left: none;
+                color: red;
             }
         }
     }
 }
-
 #main .home.style-logout  {
     header {
-        background: none;
+        background: #04163d;
         .outer-wrapper {
             .title {
                 width: 100%;
@@ -113,12 +66,12 @@ section.home {
                         margin: 0 0 45px;
                     }
                     h1 {
-                        color: #111827;
-                        font-size: 20px;
+                        color: #e5e8ef;
+                        font-size: 60px;
                         font-weight: 700;
                         line-height: 30px;
                         margin: 0 0 8px;
-                        text-align: left;
+                        margin-left: 25px;
                         @include media-breakpoint-up(md) {
                             font-size: 24px;
                             font-weight: 700;
@@ -147,7 +100,7 @@ section.home {
                                 position: static;
                                 margin: 0 0 0 16px;
                                 min-width: 90px;
-                                color: #fff;
+                                color: #0f0439;
                                 font-size: 16px;
                                 font-weight: 500;
                                 line-height: 26px;
@@ -162,7 +115,7 @@ section.home {
                                     min-width: 100px;
                                 }
                                 &:hover {
-                                    background: $primary;
+                                    background: #fff;
                                     opacity: .8;
                                 }
                             }
@@ -207,21 +160,6 @@ body.indigo-dark-theme {
         &:hover, &:focus, &:active, a:visited:not(.btn):focus {
             color: $primary-d;
         }
-    }
-    
-    .logo-image {
-        width: 150px; /* Adjust width */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .outer-wrapper {
-        background-image: url("${static.url('images/learning.jpg')}");
-        background-size: cover; /* Ensures the image covers the entire container */
-        background-position: center; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     
