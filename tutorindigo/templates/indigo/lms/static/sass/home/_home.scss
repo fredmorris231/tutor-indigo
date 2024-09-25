@@ -20,6 +20,13 @@ section.home {
 .global-header {
     background-color: #04163d; /* Sets the entire global header background */
 }
+.wrapper-footer {
+    background-color: #04163d; /* Keep the dark blue background */
+    padding: 20px; /* Retain the padding */
+    color: white; /* Set text color for better contrast */
+}
+
+
 .global-header .nav-links .secondary {
     .btn-holder {
         letter-spacing: -.32em;
