@@ -5,7 +5,6 @@ section.home {
     padding: 0 15px;
 }
 .home>header .title {
-    background-image: url("${static.url('images/learning.jpg')}");
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -96,14 +95,6 @@ section.home {
     header {
         background: none;
         .outer-wrapper {
-            background-image: url("${static.url('images/learning.jpg')}");
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
             .title {
                 width: 100%;
                 float: none;
@@ -218,18 +209,8 @@ body.indigo-dark-theme {
     }
     
     .logo-image {
-        width: 150px; /* Adjust width */
+        width: 300px; /* Adjust width */
         height: auto; /* Maintain aspect ratio */
-    }
-    .outer-wrapper {
-        background-image: url("${static.url('images/learning.jpg')}");
-        background-size: cover; /* Ensures the image covers the entire container */
-        background-position: center; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
-        min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     
