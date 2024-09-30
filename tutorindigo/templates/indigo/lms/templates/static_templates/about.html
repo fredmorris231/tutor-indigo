@@ -8,15 +8,43 @@
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
+            <%block name="pageheader">${page_header or _("About Us")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("LIBERIA GLOBAL ICT TRAINING INSTITUTE is a non-profit entity dedicated to providing Learning Management Systems (LMS) services to educational institutions, non-profit organizations, and community groups to enhance and support educational activities and training programs. The Organization also engages in professional development trainings for individuals to skill up their capacities and provide them a means for livelihood.")}</%block>
+            <%block name="pagecontent">${page_content or _("The Global Institute for Community Empowerment (GIFCE) is a 501(c)(3) organization based in Chicago, USA. We differentiate ourselves from other organizations by prioritizing the empowerment of underserved communities through access to quality education globally, which we view as a fundamental human right. ")}</%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
+       <!-- <div class="graphic-img">
             <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
             <img class="dark" src="${static.url('images/about-dark.svg')}" alt="Runs on Tutor" />
-        </div>
+        </div> -->
+    </section>
+
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Our Mission")}</%block>
+        </h1>
+        <p>
+            <%block name="pagecontent">${page_content or _("The mission of Global Institute for Community Empowerment is to empower people through the attainment of  quality education regardless of their location and economic status. Predicated upon this, we strive to transform knowledge into practical application of our research initiatives as it manifests in the positive work our beneficiaries do in their neighborhoods.")}</%block>
+        </p>
+        <!-- NEW IN INDIGO: add graphic image -->
+       <!-- <div class="graphic-img">
+            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
+            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="Runs on Tutor" />
+        </div> -->
+    </section>
+
+        <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Our Vision")}</%block>
+        </h1>
+        <p>
+            <%block name="pagecontent">${page_content or _("We envision a society where all individuals, communities and societies are empowered through education to positively impact the world regardless of their race, national origin or economic status.")}</%block>
+        </p>
+        <!-- NEW IN INDIGO: add graphic image -->
+       <!-- <div class="graphic-img">
+            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
+            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="Runs on Tutor" />
+        </div> -->
     </section>
 </main>
