@@ -5,27 +5,11 @@ section.home {
     padding: 0 15px;
 }
 .home>header .title {
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 100vh; /* Ensures the container takes up at least the full height of the viewport */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: none !important;
 }
 .home>header .outer-wrapper {
     max-width: 100%;
 }
-.global-header {
-    background-color: #04163d; /* Sets the entire global header background */
-}
-.wrapper-footer {
-    background-color: #04163d; /* Keep the dark blue background */
-    padding: 20px; /* Retain the padding */
-    color: white; /* Set text color for better contrast */
-}
-
-
 .global-header .nav-links .secondary {
     .btn-holder {
         letter-spacing: -.32em;
@@ -34,63 +18,17 @@ section.home {
             letter-spacing: normal;
             margin: 0 7px;
             padding: 12px 0;
-            position: relative; /* Allows for custom animations */
             .btn {
-                background-color: #04163d;
                 line-height: 20px;
+                padding: 9px 17px;
                 font-size: 14px;
-                border: none;
+                border-radius: 6px;
                 font-weight: 500;
-                color: #fff; /* Default text color */
-                position: relative;
-                z-index: 1;
-                transition: color 0.4s ease; /* Smooth color transition */
-                /* Optional padding and display adjustments */
-                /* padding: 9px 17px; */
-                /* display: block; */
-            }
-
-            /* Unique hover effects */
-            &:hover .btn {
-                color: #ff0000; /* Unique hover text color */
-            }
-
-            &:before, &:after {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                height: 4px;
-                background: linear-gradient(to right, #ff0000, #04163d); /* Gradient border */
-                transition: transform 0.4s ease;
-                transform: scaleX(0); /* Hidden by default */
-                z-index: 0;
-            }
-
-            &:before {
-                top: 0; /* Top border */
-                transform-origin: left; /* Animation from left to right */
-            }
-
-            &:after {
-                bottom: 0; /* Bottom border */
-                transform-origin: right; /* Animation from right to left */
-            }
-
-            &:hover:before, &:hover:after {
-                transform: scaleX(1); /* Reveal on hover */
-            }
-
-            /* For an extra hover effect */
-            &:hover {
-                border-radius: 4px; /* Optional rounded corners on hover */
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle hover shadow */
-                background-color: rgba(255, 255, 255, 0.1); /* Background color transition */
+                display: block;
             }
         }
     }
 }
-
 #main .home.style-logout  {
     header {
         background: none;
@@ -207,13 +145,24 @@ body.indigo-dark-theme {
             color: $primary-d;
         }
     }
-    
-    .logo-image {
-        width: 300px; /* Adjust width */
-        height: auto; /* Maintain aspect ratio */
+    .global-header .nav-links .secondary {
+        .btn-holder {
+            .nav-item {
+                .btn {
+                    &.sign-in-btn {
+                        background: $primary-d;
+                        color: $btn-color-d;
+                        border-color: $primary-d;
+                    }
+                    &.register-btn {
+                        color: $text-color-d;
+                        border-color: $text-color-d;
+                        background: none;
+                    }
+                }
+            }
+        }
     }
-    
-    
     #main .home.style-logout  {
         header {
             background: none;
