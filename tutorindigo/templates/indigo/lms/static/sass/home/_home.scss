@@ -10,8 +10,10 @@ section.home {
 .home>header .outer-wrapper {
     max-width: 100%;
 }
+.global-header{
+ background-color: #131D47; /* Edited by Amos*/
+}
 .global-header .nav-links .secondary {
-    background-color: $primary-d; /* Edited by Amos*/
     .btn-holder {
         letter-spacing: -.32em;
         margin: 0 -7px;
@@ -32,7 +34,7 @@ section.home {
 }
 #main .home.style-logout  {
     header {
-        background: none !important; /* Background color added by Amos*/
+        background: none !important;
         .outer-wrapper {
             .title {
                 width: 100%;
